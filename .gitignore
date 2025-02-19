@@ -1,1 +1,13 @@
+# Arquivos de configuração
 .vscode/
+*.pdf
+*.env
+
+# Arquivos gerados por notebooks
+*/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# Dados de saída
+**/*.json
+**/*.csv
+**/*.xlsx
