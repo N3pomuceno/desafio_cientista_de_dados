@@ -56,7 +56,7 @@ Para explorar o dataset transformado, siga as etapas anteriores para gerar o arq
 
 ## DBT
 
-Para preparar o ambiente de banco de dados, utilizamos **Docker**. Antes de executar os comandos a seguir, certifique-se de ter o **Docker Desktop** instalado.
+Para preparar o ambiente de banco de dados, utilizamos **Docker**. Antes de executar os comandos a seguir, certifique-se de ter o **Docker** instalado.
 
 1. **Subir o container do banco de dados**:
    ```bash
@@ -78,7 +78,7 @@ Para preparar o ambiente de banco de dados, utilizamos **Docker**. Antes de exec
    ```
 
 ### Limitações encontradas
-O DBT foi utilizado para estruturar e transformar os dados no **PostgreSQL**, porém algumas transformações complexas (como tratamento de colunas multivaloradas) se mostraram complexas em SQL. Em particular, a divisão de certos campos foi parcialmente implementada, mas a abordagem completa exigiria transformações mais elaboradas, tornando o código menos eficiente e difícil de manter. 
+O DBT foi utilizado para estruturar e transformar os dados no **PostgreSQL**, porém algumas transformações complexas (como tratamento de colunas multivaloradas) se mostraram consideravelmente problemáticas em SQL. Em particular, a divisão de certos campos foi parcialmente implementada, mas a abordagem completa exigiria transformações mais elaboradas, tornando o código menos eficiente e difícil de manter. 
 
 Como alternativa, foi verificado online a possibilidade de usar DBT com **Python**, que permitiria reutilizar parte das transformações feitas anteriormente em Pandas, e para alguns adaptadores de DBT isso pode ser feito.
 
