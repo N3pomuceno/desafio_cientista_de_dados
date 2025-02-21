@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fichas_transform
+    description: "Modelo com as primeiras transformações de dados, como conversões de valores binários e tratamento de datas."
+
+  - name: pressao_limites
+    description: "Modelo que calcula os percentis para as pressões sistólica e diastólica, utilizados para identificar outliers."
+  
+  - name: fichas_lida_pressao
+    description: "Modelo que aplica verificações de limites (outliers) nas pressões sistólica e diastólica."
+  
+  - name: fichas_explodidas
+    description: "Modelo que explode as colunas multivaloradas (ex. meios de transporte) em múltiplas linhas."
