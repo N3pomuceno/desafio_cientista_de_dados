@@ -1,0 +1,6 @@
+# Não é uma boa prática expor credenciais no código, porém para fins de reprodução da tarefa, deixarei aqui.
+POSTGRES_USER="admin"
+POSTGRES_PASSWORD="12345"
+POSTGRES_DB="db"
+POSTGRES_HOST="localhost"
+POSTGRES_PORT="5432"
